@@ -31,7 +31,7 @@ class Vector2(object):
             if abs(self.y - other.y) < self.thresh:
                 return True
         return False
-    
+        
     def __str__(self):
         return "<" + str(self.x) + ", " + str(self.y) + ">"
     
