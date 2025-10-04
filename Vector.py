@@ -31,3 +31,22 @@ class Vector2(object):
             if abs(self.y - other.y) < self.thresh:
                 return True
         return False
+    
+    def __str__(self):
+        return "<" + str(self.x) + ", " + str(self.y) + ">"
+    
+    def magnitudeSquared(self):
+        return self.x**2 + self.y**2
+    
+    def magnitude(self):
+        return math.sqrt(self.magnitudeSquared())
+    
+    def copy(self):
+        return Vector2(self.x, self.y)
+    
+    def asTuple(self):
+        return self.x, self.y
+    
+    def asInt(self):
+        return int(self.x), int(self.y)
+    
